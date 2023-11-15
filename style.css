@@ -356,7 +356,7 @@ span {
 .skills {
     min-height:auto;
     padding-bottom:7rem ;
-    background: var(--second-bg-color)
+     background: var(--bg-color);
 
 }
 
@@ -392,7 +392,7 @@ span {
     left:0;
     width:0%;
     height:100%;
-    background:var(--bg-color);
+     background:var(--second-bg-color);
     z-index:-1;
     transition:.5s ;
 }
@@ -468,6 +468,7 @@ span {
 
 .project {
     padding-bottom: 10rem;
+    background-color: var(--second-bg-color);
 }
 
 .project h2 {
@@ -553,6 +554,7 @@ span {
 .contact {
     min-height:auto;
     padding-bottom: 7rem;
+    background-color: var(--bg-color);
 
 }
 
