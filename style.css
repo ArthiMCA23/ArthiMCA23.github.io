@@ -352,11 +352,11 @@ span {
     background: var(--second-bg-color);
 }
 
-
+/* 
 .skills {
     min-height:auto;
     padding-bottom:7rem ;
-     background: var(--bg-color);
+    background: var(--second-bg-color)
 
 }
 
@@ -392,7 +392,7 @@ span {
     left:0;
     width:0%;
     height:100%;
-     background:var(--second-bg-color);
+    background:var(--bg-color);
     z-index:-1;
     transition:.5s ;
 }
@@ -432,18 +432,30 @@ span {
 }
 
 .skills-column :nth-child(1) .skills-content .skill-progress:nth-child(1) .bar span {
+    width:95%;
+}
+
+.skills-column :nth-child(2) .skills-content .skill-progress:nth-child(2) .bar span {
     width:90%;
 }
 
-.skills-column :nth-child(1) .skills-content .skill-progress:nth-child(2) .bar span {
+.skills-column :nth-child(1) .skills-content .skill-progress:nth-child(3) .bar span {
     width:80%;
 }
 
-.skills-column :nth-child(1) .skills-content .skill-progress:nth-child(3) .bar span {
-    width:60%;
+.skills-column :nth-child(1) .skills-content .skill-progress:nth-child(4) .bar span {
+    width:80%;
 }
 
-.skills-column :nth-child(1) .skills-content .skill-progress:nth-child(4) .bar span {
+.skills-column :nth-child(2) .skills-content .skill-progress:nth-child(5) .bar span {
+    width:75%;
+}
+
+.skills-column :nth-child(2) .skills-content .skill-progress:nth-child(6) .bar span {
+    width:75%;
+}
+
+.skills-column :nth-child(1) .skills-content .skill-progress:nth-child(7) .bar span {
     width:70%;
 }
 
@@ -462,13 +474,113 @@ span {
 
 .skills-column :nth-child(2) .skills-content .skill-progress:nth-child(4) .bar span {
     width:70%;
+} */
+
+
+/* Skills Section */
+.skills {
+    background: var(--second-bg-color);
+    color: var(--main-color);
 }
+
+.skills:hover {
+    background: var(--bg-color);
+}
+
+
+.skills .heading {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    /* color: #00C9A7; Attractive main color */
+    color: var(--main-color);
+
+}
+
+/* Skills Row */
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Skill Column */
+.skills-column {
+    flex: 1 1 450px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-column:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill Titles */
+.skills-column .title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 1000;
+    color: #FFD700; /* Gold color */
+}
+
+/* Skill Progress Bars */
+.skill-progress {
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+/* Skill Name and Percentage */
+.skill-progress h3 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Bootstrap Progress Bar Styling */
+.bar {
+    height: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #00C9A7, #00FFB3);
+    transition: width 1s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Specific Skill Widths */
+.skill-progress:nth-of-type(1) .bar span { width: 95%; }
+.skill-progress:nth-of-type(2) .bar span { width: 90%; }
+.skill-progress:nth-of-type(3) .bar span { width: 80%; }
+.skill-progress:nth-of-type(4) .bar span { width: 80%; }
+.skill-progress:nth-of-type(5) .bar span { width: 80%; }
+.skill-progress:nth-of-type(6) .bar span { width: 80%; }
+.skill-progress:nth-of-type(7) .bar span { width: 80%; }
+.skill-progress:nth-of-type(8) .bar span { width: 70%; }
+
+.skill-progress:nth-of-type(9) .bar span { width: 90%; }
+.skill-progress:nth-of-type(10) .bar span { width: 80%; }
+.skill-progress:nth-of-type(11) .bar span { width: 60%; }
+.skill-progress:nth-of-type(12) .bar span { width: 70%; }
+
+
+
 
 
 
 .project {
     padding-bottom: 10rem;
-    background-color: var(--second-bg-color);
 }
 
 .project h2 {
@@ -554,7 +666,6 @@ span {
 .contact {
     min-height:auto;
     padding-bottom: 7rem;
-    background-color: var(--bg-color);
 
 }
 
